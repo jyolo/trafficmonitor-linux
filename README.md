@@ -20,6 +20,16 @@ Windows 平台的 MFC 桌面程序。MFC 是微软专有框架，GCC / MinGW 都
 | CPU / 主板 / 内存 / 硬盘温度 | `/sys/class/hwmon`（见「硬件温度」一节） |
 | CPU / 主板 / 内存 / 硬盘功耗 | `/sys/class/powercap`（RAPL）+ `hwmon power*_input`（见「功耗」一节） |
 
+## 截图
+
+悬浮条（多行布局：每行最多 4 项；没有传感器的指标不占位、不显示 `--`）：
+
+![悬浮条](docs/screenshot-bar.png)
+
+右键菜单（没有数据源的项置灰并标「（无数据）」，不能勾选）：
+
+![右键菜单](docs/screenshot-menu.png)
+
 ## 安装
 
     sudo dpkg -i trafficmonitor_@VERSION@_all.deb
