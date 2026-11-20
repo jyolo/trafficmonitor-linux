@@ -133,6 +133,15 @@ SATA 盘的温度要 `drivetemp` 模块（安装包已在 `/etc/modules-load.d/t
   迷你主机的 EC、DDR4 内存条、消费级硬件没有功率通道，界面会如实显示 `--`
 - 显示项支持单行或多行（每行最多 N 项），字体/不透明度写在配置里
 
+## 开发方式
+
+本项目由 [Hermes](https://hermes-agent.nousresearch.com)（AI 编码智能体）以对话方式开发，
+模型 deepseek-v4.1-flash：全程仅 10 条用户消息，AI 自主执行 153 轮、172 次工具调用，
+消耗约 2900 万 token（实付约 ¥2.8，官网等价价）。从网速悬浮窗第一版，到四路温度/功耗、
+deb 打包与本仓库发布，全部在对话中完成。
+
+本仓库即该对话的最终产出，MIT 许可证开源。
+
 ## 构建
 
     ./build-deb.sh            # 产出 dist/trafficmonitor_@VERSION@_all.deb
