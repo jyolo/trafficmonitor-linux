@@ -1,0 +1,6 @@
+# 构建产物
+build/
+dist/
+# Python 缓存
+src/__pycache__/
+*.pyc
